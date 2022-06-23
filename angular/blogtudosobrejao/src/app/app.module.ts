@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http'
 
 //Route Module
 import { RoutingModule } from './app.router';
@@ -11,8 +12,9 @@ import { PostPageComponent } from './pages/post-page/post-page.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
 import { FormsModule } from '@angular/forms';
 
-//services
 
+//services
+import { BlogService }  from './providers/blog.service'
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     RoutingModule,
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [ ],
   bootstrap: [AppComponent]
