@@ -14,14 +14,16 @@ import { FormsModule } from '@angular/forms';
 
 
 //services
-import { BlogService }  from './providers/blog.service'
+import { BlogService }  from './providers/blog.service';
+import { HeaderComponent } from './components/header/header.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     PostPageComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    HeaderComponent
   ],
   imports: [
     RoutingModule,
