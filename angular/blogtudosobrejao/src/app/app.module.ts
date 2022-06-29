@@ -10,12 +10,11 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PostPageComponent } from './pages/post-page/post-page.component';
 import { ErrorPageComponent } from './pages/error-page/error-page.component';
-import { FormsModule } from '@angular/forms';
 
 
 //services
-import { BlogService }  from './providers/blog.service';
-import { HeaderComponent } from './components/header/header.component'
+import { BlogService }  from './providers/blogtudosobrejao.service';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +31,7 @@ import { HeaderComponent } from './components/header/header.component'
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ ],
+  providers: [ BlogService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
