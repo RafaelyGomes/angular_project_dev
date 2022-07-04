@@ -15,6 +15,9 @@ import { ErrorPageComponent } from './pages/error-page/error-page.component';
 //services
 import { BlogService }  from './providers/blogtudosobrejao.service';
 import { HeaderComponent } from './components/header/header.component';
+import { PostCardComponent } from './components/post-card/post-card.component';
+import { PostsComponent } from './components/posts/posts.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { HeaderComponent } from './components/header/header.component';
     HomePageComponent,
     PostPageComponent,
     ErrorPageComponent,
-    HeaderComponent
+    HeaderComponent,
+    PostCardComponent,
+    PostsComponent,
+    FooterComponent
   ],
   imports: [
     RoutingModule,
